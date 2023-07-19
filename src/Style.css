@@ -1,0 +1,1334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./Images/landing.png");
+}
+
+.introduction{
+    position: absolute;
+    transform: translate(100px, 150px);
+}
+
+h1{
+    color: white;
+    font-family: 'Bebas Neue';font-size: 100px;
+}
+
+p{
+    color: white;
+    font-family: 'ROBOTO';font-size: 22px;
+    margin-top: 10px;
+}
+
+.button{
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'ROBOTO';font-size: 15px;
+}   
+
+.exersise{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-image: url("./Images/one.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 240px;
+    height: 350px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid #fff;
+
+}
+
+.card:hover{
+    animation: dark 1s forwards;
+}
+
+@keyframes dark {
+    0%{
+        background-color: transparent;
+
+    }
+    100%{
+        background-color: #fff;
+
+    }
+}
+
+@keyframes text{
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #000;
+    }
+}
+
+.card h1{
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    margin-top: -40px;
+    color: #fff;
+
+}
+
+.card:hover h1{ 
+	animation: text 1s forwards;
+}
+
+.card:hover p{ 
+	animation: text 1s forwards;
+}
+
+.card p{
+    font-family: 'ROBOTO';font-size: 17px;
+    margin-top: 20px;
+    color: rgba(179, 179, 179, 0.87);
+}
+
+
+#sec h1{
+    margin-top: -40px;
+}
+
+#third h1{
+    margin-top: -50px;
+}
+
+.overview{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.bg-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overview-text{
+    height: 450px;
+    width: 400px;
+    background-color: #fff;
+    position: relative;
+    transform: translate(10vh,-85vh);
+}
+
+.overview-text h1{
+    width: 300px;
+    font-family: 'Bebas Neue';font-size: 55px;
+    color: #000;
+    padding-top: 25px;
+    margin-left: 50px;
+}
+
+.overview-text p{
+    width: 300px;
+    font-family: 'ROBOTO';font-size: 17px;
+    color: #000;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.Workouts{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.Nav-container{
+    height: 95px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 200px;  
+
+}
+
+.Nav{
+    width: 60%;
+    margin-right: 70px;
+}
+
+.Nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Nav a{
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+
+.Nav a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.Nav a:hover::after{
+    width: 100%;
+}
+
+.card a{
+    color: #000;
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family: 'Bebas Neue';
+    font-size: 25px; 
+}
+
+
+.card:hover a{
+    background-color: #000;
+    transition: 1s;
+    animation: text-opposite 1s forwards;
+}
+
+
+@keyframes text-opposite{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+.nav-logo img{
+    width: 180px;
+    height: 180px;
+}
+
+#card-link{
+    margin-top: 50px;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+}
+
+#know{
+    background-color: #242B2E;
+}
+
+#know:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+
+body::-webkit-scrollbar {
+    width: 17px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #242B2E;    /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */ 
+    border: 3px solid #000;  /* creates padding around scroll thumb */
+  }
+
+  body::-webkit-scrollbar-thumb:hover{
+    background-color: #fff;
+    
+  }
+
+  #get-started{
+    width: 150px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid white;
+  }
+
+  #get-started a{
+    color: #fff;
+    font-family: 'ROBOTO';
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  #get-started:hover{
+    background-color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #get-started:hover a{
+    color: black;
+    transition: 0.5s;
+  }
+
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: transform .2s;
+    border: 1px solid white;
+}
+
+.circle:hover{
+    transform: scale(1.2);
+}
+    
+
+.flex-one{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.diet-cards{
+    height: 200px;
+    width: 300px;
+    background-color: red;
+}
+
+.Diet{
+    width: 100%;
+    height: 100vh;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+}
+
+#home{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 50px;
+}
+
+#arrow{
+    height: 25px;
+    width: 25px;
+    transform: rotate(45deg) translate(5px, 5px);
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.Beginner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Beginner-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.intermediate{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Intermediate-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.AdvancePage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Advance-Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Pro{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.align{
+    height: 200px;
+    width: 200px;
+}
+
+h2{
+    margin-top: 220px;
+    margin-left: 65px;
+}
+
+.Signup{
+    height: 75vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.Signin{
+    height: 75vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.Signup h1{
+    font-size: 75px;
+    margin-top: 20px;
+}
+
+.Signin h1{
+    font-size: 75px;
+    margin-top: 20px;
+}
+
+.signup-btn{
+    height: 50px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.signin-btn{
+    height: 50px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.Signup-form{
+    height: 100vh;
+    width: 100%;
+    background-color: #242B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Signup-form-container{
+    height: 90vh;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    font-size: 25px;
+    outline: none;
+    color: #fff;
+}
+
+.Signup-form-container h1{
+    margin-top: 60px;
+    font-size: 70px;
+}
+
+.Signin-form-container h1{
+    margin-top: -80px;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.Signin-form-container input{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.Signup-form-container a{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 3px solid #242B2E;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.Signup-form-container a:hover{
+    background-color: #fff;
+    transition: .5s;
+    color: #000;
+}
+
+.Signin-form{
+    height: 100vh;
+    width: 100%;
+    background-color: #242B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Signin-form-container{
+    height: 90vh;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Signin-form-container a{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 3px solid #242B2E;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.Signin-form-container a:hover{
+    background-color: #fff;
+    transition: .5s;
+    color: #000;
+}
+
+.Signup:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Signin:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Signup:hover .signup-btn{
+    transform:scale3d(1.1, 1.1, 2.1);
+    transition: 0.5s;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color:#000;
+}
+
+
+
+.Signin:hover .signin-btn{
+    transform:scale3d(1.1, 1.1, 2.1);
+    transition: 0.5s;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.Signup:hover h1{
+    transform:scale3d(1.3, 1.3, 3.1);
+    transition: 0.5s;
+}
+
+.Signup h1{
+    transition: 0.5s;
+}
+
+.Signin:hover h1{
+    transform:scale3d(1.3, 1.3, 3.1);
+    transition: 0.5s;
+}
+
+.Signin h1{
+    transition: 0.5s;
+}
+
+.pro-landing{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.pro-landing h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.pro-landing a{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.pro-landing a:hover{
+    background-color: #fff;
+    transition: .5s;
+    color: #000;
+}
+
+#pad{
+    margin-right: 20px;
+}
+
+.signin-btns{
+    margin-top: 30px;
+}
+
+.Advance{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exercise-cards{
+    height: 240px;
+    width: 280px;
+    background-color: #242B2E;
+    border: 1px solid #Ffff;
+}
+
+
+h4{
+    color: #fff;
+}
+
+.Flip-card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-container{
+    gap: 100px;
+    perspective: 1000px;
+    display: flex;
+}
+
+.Flip-card:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.Flip-card-front, .Flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Flip-card-front{
+    background-color: #242B2E;
+}
+
+#Dumbbellpress{
+    background-image: url("./Images/Exercises/Beginner/dumbbell-bench-press-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Flip-card-back{
+    background-color: #242B2E;
+    transform: rotateY(180deg);
+}
+
+.pro-landing h1{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.pro-nav{
+    margin-top: -450px;
+    margin-left: 70%;
+    position: absolute;
+}
+
+.pro-nav img{
+    height: 50px;
+    width: 50px;
+    margin-top: 7px;
+    border-radius: 50%;
+}
+
+
+
+.pro-nav-container{
+    display: flex;
+    gap: 20px;
+}
+
+.pro-nav a{
+    margin-left: 80px;
+}
+
+#workout-plan{
+    background-color: #242B2E;
+}
+
+#workout-plan:hover{
+    background-color: #000;
+    transition: .5s;
+
+}
+
+#diet-plan{
+    background-color: #242B2E;
+}
+
+#diet-plan:hover{
+    background-color: #000;
+    transition: .5s;
+}
+
+.text-alignment{
+    width: 600px;
+    margin-left: -30%;
+    margin-top: 5%;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-alignment h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+#pro-btn{
+    margin-top: 50px;
+    margin-right: 67%
+}
+
+
+.payment{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment-btn{
+    color: #fff;
+    background-color: #242B2E;
+    border: 1px solid #fff;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    margin-top: 10x;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.payment-btn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.knowmore{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+}
+
+.knowmore__container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.knowmore__container p{
+    font-size: 20px;
+}
+
+.dietform{
+    height: 200vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.dietform__container{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 10%;
+    left: 0;
+    position: fixed;
+}
+
+.diet-form{
+    height: 130vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.diet-form h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.diet-form input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.diet-form label{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+
+.custom-workout{
+    height: 200vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content:flex-end;
+}
+
+#btn-a{
+    height: 20px;
+    width: 50px;
+}
+
+.workout-form{
+    height: 105vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.workout-form h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.workout-form input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.workout-form label{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upload{
+    height:50px;
+    width: 150px;
+    margin-bottom: 15px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    border-color: #fff;
+}
+
+.upload:hover { 
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.file{
+    height: 60px;
+    width: 150px;
+    margin-top:-10px;
+    margin-bottom: -20px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    border: none;
+}
+
+.flex-one h2{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    margin-top: 210px;
+    margin-left: 80px;
+}
+
+#KneePushups{
+    background-image: url("./Images/Exercises/Beginner/KneePushups.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#PecDecFly{
+    background-image: url("./Images/Exercises/Beginner/peckdeck.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#InclinedDBpress{
+    background-image: url("./Images/Exercises/Beginner/incline-dumbbell-bench-press-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#Declinedumbbellflye{
+    background-image: url("./Images/Exercises/Beginner/decline-dumbbell-fly-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#KneeDiamondpushups{
+    background-image: url("./Images/Exercises/Beginner/diamondpushups.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#wallSquat{
+    background-image: url("./Images/Exercises/Beginner/wallsquat.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#SplitSquat{
+    background-image: url("./Images/Exercises/Beginner/splitsqats.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#GlutesBridge{
+    background-image: url("./Images/Exercises/Beginner/glutesbridge.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#DumbbellDeadlift{
+    background-image: url("./Images/Exercises/Beginner/dumbbell-deadlift.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#HeelTouchSide{
+    background-image: url("./Images/Exercises/Beginner/heeltouch.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#DumbbellGobletSquats{
+    background-image: url("./Images/Exercises/Beginner/DBGobletSquats.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#BackSlapsWrapAroundStretch{
+    background-image: url("./Images/Exercises/Beginner/BackSlapsWrapAroundStretch.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ArnoldPress{
+    background-image: url("./Images/Exercises/Beginner/ARNOLD.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#Bent-OverRows{
+    background-image: url("./Images/Exercises/Beginner/shutupandbendover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ShoulderPress{
+    background-image: url("./Images/Exercises/Beginner/shoulderpress.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#LateralRaises{
+    background-image: url("./Images/Exercises/Beginner/latralraises.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#FrontRaises{
+    background-image: url("./Images/Exercises/Beginner/frontraise.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#Hyperextensions{
+    background-image: url("./Images/Exercises/Beginner/Hyperextensions.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#KettlebellDeadlifts{
+    background-image: url("./Images/Exercises/Beginner/KettlebellDeadlifts.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#CatCowPose{
+    background-image: url("./Images/Exercises/Beginner/cat.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#KettlebellRenegadeRow{
+    background-image: url("./Images/Exercises/Beginner/KettlebellRenegadeRow.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ChildsPose{
+    background-image: url("./Images/Exercises/Beginner/childpose.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#beginner-five{
+    background-image: url("./Images/hero-abs-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-one{
+    background-image: url("./Images/hero-chest-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-three{
+    background-image: url("./Images/hero-shoulders-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-four{
+    background-image: url("./Images/hero-biceps-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-six{
+    background-image: url("./Images/back.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-two{
+    background-image: url("./Images/legs-flex.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#diet-cards{
+    width: 350px;
+    height: 500px;
+}
+
+#keto{
+    background-image: url("./Images/keto.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#high-protein{
+    background-image: url("./Images/highprotein.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#high-carb{
+    background-image: url("./Images/highcarb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#keto h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+}
+
+#high-carb h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+}
+
+#high-protein h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 130px;
+}
+
+#barbell-bench-press{
+    background-image: url("./Images/Exercises/Advance/barbell-bench-press.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Weighted-pushups{
+    background-image: url("./Images/Exercises/Advance/weighted-push-up.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Triceps-dips{
+    background-image: url("./Images/Exercises/Advance/Triceps-Dips.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#decline-onearm{
+    background-image: url("./Images/Exercises/Advance/One-Arm-Decline-Cable-Fly.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#decline-pushups{
+    background-image: url("./Images/Exercises/Advance/decline-push-up-form.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Dumbell-pullover{
+    background-image: url("./Images/Exercises/Advance/Dumbbell-Pullover.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-box{
+    width: 500px;
+    height: 400px;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+.text-box h1{
+    font-family: 'Bebas Neue';
+    font-size: 70px;
+    color: white;
+}
+
+.knowmore__container:nth-of-type(3){
+    background-color: #242B2E;
+}
+
+.knowmore__container:nth-of-type(1){
+    background-color: #242B2E;
+}
+
+.images{
+    height: 400px;
+    width: 300px;
+    margin-left: 250px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+}
+
+#gym-trainer-one{
+    background-image: url("./Images/trainer1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gym-trainer-two{
+    background-image: url("./Images/trainer2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gym-trainer-three{
+    background-image: url("./Images/trainer3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+alert{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: white;
+}
+
+
+/* google-button */
+.login-with-google-btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    padding: 12px 16px 12px 42px;
+    border: 2px solid #757575;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+  }
+  .login-with-google-btn:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    color: #757575;
+  }
+  .login-with-google-btn:active {
+    background-color: #eeeeee;
+  }
+  .login-with-google-btn:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+  }
+  .login-with-google-btn:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
